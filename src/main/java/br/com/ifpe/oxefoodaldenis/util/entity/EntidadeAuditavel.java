@@ -14,8 +14,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @MappedSuperclass
 public abstract class EntidadeAuditavel extends EntidadeNegocio {
 

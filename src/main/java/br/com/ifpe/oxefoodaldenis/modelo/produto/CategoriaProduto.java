@@ -16,14 +16,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Table(name = "CategoriaProduto")
-@Where(clause = "habilitado = true")
 @Builder
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "CategoriaProduto")
+@Where(clause = "habilitado = true")
 public class CategoriaProduto extends EntidadeAuditavel {
 
 	private static final long serialVersionUID = 6976903494676468546L;
@@ -40,6 +40,6 @@ public class CategoriaProduto extends EntidadeAuditavel {
     private String descricao;
     
     public void updateFrom(CategoriaProduto param) {
-	this.setDescricao(param.getDescricao());
+    	this.setDescricao(param.getDescricao());
     }
 }

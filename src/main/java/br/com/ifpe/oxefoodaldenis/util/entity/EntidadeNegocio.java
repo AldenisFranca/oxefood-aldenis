@@ -15,8 +15,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @MappedSuperclass
 @EqualsAndHashCode(of = { "id" })
 public abstract class EntidadeNegocio implements Serializable {
