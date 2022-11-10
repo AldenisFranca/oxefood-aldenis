@@ -43,7 +43,11 @@ public class Cliente extends EntidadeAuditavel{
 	private String foneAlternativo;
 	
 	public void updateFrom(Cliente param) {
-    	this.setNome(param.getNome());
-    }
+		this.setChaveEmpresa(param.getChaveEmpresa());
+		this.setNome(param.getNome());
+		this.setCpf(param.getCpf());
+		this.setFone(param.getFone());
+		this.setFoneAlternativo(param.getFoneAlternativo());
+	}
     
 }

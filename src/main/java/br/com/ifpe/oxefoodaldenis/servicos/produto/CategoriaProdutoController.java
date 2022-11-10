@@ -39,7 +39,8 @@ public class CategoriaProdutoController extends GenericController {
 	}
 
 	@ApiOperation(value = "Serviço responsável por obter uma categoria de produto referente ao Id passado na URL.")
-	@ApiResponses(value = { @ApiResponse(code = 200, message = "Retorna a categoria de produto."),
+	@ApiResponses(value = { 
+			@ApiResponse(code = 200, message = "Retorna a categoria de produto."),
 			@ApiResponse(code = 401, message = "Acesso não autorizado."),
 			@ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso."),
 			@ApiResponse(code = 404, message = "Não foi encontrado um registro para o Id informado."),
